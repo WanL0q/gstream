@@ -25,5 +25,13 @@ You need to calibrate the camera to determine __wb, tw__ (the corresponding numb
 __Note:__ The frame size is 360 x 480 pixels, and the steering angle of the vehicle is taken from angular.z of the /cmd_vel topic. 
 ## 3. Quick Start Guide
 ```sh
+cd <your_ws>/src
+```
+
+```sh
+./mediamtx
+```
+Open new tab in terminal
+```sh
 roslaunch gstream self_driving.launch
 ```
