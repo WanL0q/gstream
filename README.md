@@ -5,6 +5,8 @@ A program to calculate the steering angle of the wheels and estimate the traject
 
 To calculate the ideal wheel angles, the block uses these equations.
 
+![image](https://github.com/user-attachments/assets/85e985d3-760b-4715-bad1-f750607780cf)
+
 ## 1. PC Setup
 ### 1.1. Installing the nescessary software
 Open the Terminal app and enter these commands:
