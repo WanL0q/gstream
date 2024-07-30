@@ -1,0 +1,12 @@
+<launch>
+    <node name="gstream_node" pkg="gstream" type="gstream.py" output="screen">
+        <param name="rtsp_url" value="rtspt://localhost:8554/my_camera" />
+    </node>
+    
+    <!-- <node name="mediamtx_node" pkg="gstream" type="mediamtx" output="screen" launch-prefix="bash -c">
+        <param name="config_file" value="$(find gstream)/src/mediamtx.yml"/>
+    </node> -->
+
+    <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" />
+
+</launch>
