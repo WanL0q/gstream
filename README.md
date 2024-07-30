@@ -1,6 +1,8 @@
 # gstream
 A program to calculate the steering angle of the wheels and estimate the trajectory of an autonomous delivery robot with Ackerman kinematic steering system.
 
+![block_steering_ack](https://github.com/user-attachments/assets/0605c1bc-8eea-4f14-ae0d-2b0e8fa1699c)
+
 ## 1. PC Setup
 ### 1.1. Installing the nescessary software
 Open the Terminal app and enter these commands:
