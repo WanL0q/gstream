@@ -3,6 +3,8 @@ A program to calculate the steering angle of the wheels and estimate the traject
 
 ![block_steering_ack](https://github.com/user-attachments/assets/0605c1bc-8eea-4f14-ae0d-2b0e8fa1699c)
 
+To calculate the ideal wheel angles, the block uses these equations.
+
 ## 1. PC Setup
 ### 1.1. Installing the nescessary software
 Open the Terminal app and enter these commands:
@@ -18,8 +20,9 @@ catkin_make
 source <your_ws>/devel/setup.bash
 ```
 ## 2. Configuration
-You need to calibrate the camera to determine __wb, tw__ (the corresponding number of pixels on the frame), the __start_point__ corresponding to the two wheels, the __getPerspectiveTransform__ matrix, and change the __rtsp_url__ accordingly.
+You need to calibrate the camera to determine __wb, tw__ (the corresponding number of pixels on the frame), the __start_point__ corresponding to the two wheels, the __getPerspectiveTransform__ matrix, and change the __rtsp_url__ accordingly. Additionally, you can change the configuration in __mediamtx.yml__.
 
+__Note:__ The frame size is 360 x 480 pixels, and the steering angle of the vehicle is taken from angular.z of the /cmd_vel topic. 
 ## 3. Quick Start Guide
 ```sh
 roslaunch gstream self_driving.launch
